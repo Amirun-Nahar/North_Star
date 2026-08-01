@@ -91,7 +91,7 @@ Make sure you have [Node.js (v18+)](https://nodejs.org/) installed.
    npm run build
    ```
 
-Open browser and navigate to: **([http://localhost:5173/](https://north-star-phi-five.vercel.app/))**
+Open browser and navigate to: **([https://north-star-phi-five.vercel.app/])**
 
 ---
 
