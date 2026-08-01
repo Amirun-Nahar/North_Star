@@ -2,7 +2,7 @@
 
 An AI-powered compliance engine designed to accelerate legal reviews, flag potential transaction risks, and enforce company standards. Built for the **Intra IUB Programming Club Hackathon (Final Round)**.
 
-🚀 **Live Preview:** Run locally at [http://localhost:5173/](http://localhost:5173/)
+🚀 **Live Preview:** Run at [https://north-star-phi-five.vercel.app/]
 
 ---
 
