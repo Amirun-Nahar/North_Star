@@ -33,10 +33,11 @@ export default function App() {
     try {
       const saved = localStorage.getItem('gemini_api_key');
       if (saved) {
-        if (saved.startsWith('"') && saved.endsWith('"')) {
+        try {
           return JSON.parse(saved);
+        } catch {
+          return saved;
         }
-        return saved;
       }
     } catch (e) {
       console.error("Failed to parse gemini_api_key:", e);
@@ -379,7 +380,7 @@ export default function App() {
                 value={apiKey}
                 onChange={(e) => {
                   setApiKey(e.target.value);
-                  localStorage.setItem('gemini_api_key', e.target.value);
+                  localStorage.setItem('gemini_api_key', JSON.stringify(e.target.value));
                 }}
                 className="form-input"
                 style={{ padding: '4px 8px', fontSize: '0.8rem', width: '180px', height: '28px' }}
